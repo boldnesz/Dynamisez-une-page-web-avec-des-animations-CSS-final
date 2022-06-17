@@ -1,0 +1,352 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.user-location {
+  background-color: #EAEAEA;
+  padding: 40px;
+}
+
+.logo-ohmyfood {
+  width: 50%;
+  margin: 40px auto;
+  display: block;
+  border-radius: 0;
+  height: auto;
+}
+
+.map-logo {
+  margin-right: 40px;
+}
+
+.paragraph {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.paragraph-fonct {
+  font-size: 45px;
+  font-weight: bold;
+  display: flex;
+}
+
+.reservation-menu {
+  background-color: #F6F6F6;
+  padding: 122px 30px;
+  text-align: center;
+}
+
+.site-presentation {
+  margin: 50px 0;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  margin-bottom: 50px;
+}
+
+.restaurant-list-button {
+  background-image: linear-gradient(to top left, #AB5EDB, #E972DA);
+  border-radius: 100px;
+  color: white;
+  padding: 40px 60px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  font-weight: bold;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 38px 33px 0 rgb(0 0 0 / 20%);
+}
+
+.fonctionnement {
+  margin: 120px 5%;
+}
+
+.step {
+  padding: 50px 0;
+  margin: 50px 0 50px 42px;
+  background-color: #F6F6F6;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 26px 0 rgb(0 0 0 / 20%);
+}
+
+.step-number {
+  background-color: #9356DC;
+  margin: auto 0;
+  color: white;
+  padding: 20px 15px;
+  border-radius: 100px;
+  position: relative;
+  left: -41px;
+}
+
+.step-logo {
+  color: #838383;
+  margin: auto 28px;
+}
+
+
+.restaurant-list {
+  padding: 122px 5%;
+  background-color: #F6F6F6;
+}
+
+.restaurant {
+  border-radius: 50px;
+  padding-bottom: 25px;
+  margin-bottom: 80px;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 26px 0 rgb(0 0 0 / 20%);
+}
+
+.new {
+  position: absolute;
+  right: 100px;
+  z-index: 1;
+  background-color: #99E2D0;
+  padding: 17px;
+  font-size: 48px;
+  color: #159374;
+  border-radius: 12px;
+}
+
+img {
+  border-radius: 50px 50px 0 0;
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+
+.restaurant-details-flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurant-descr {
+  margin-left: 20px;
+  font-size: 47px;
+}
+
+.restaurant-descr h3 {
+  margin: 15px 0;
+}
+
+.restaurant-descr p {
+  margin: 15px 0;
+}
+
+.heart-logo {
+  margin: 42px;
+}
+
+.heart-logo-colored {
+  margin: 42px;
+}
+
+.div-heart-logo {
+  background: darkslategrey;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.div-heart-logo:hover .heart-logo,
+.div-heart-logo .heart-logo-colored {
+  display: none;
+  background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.div-heart-logo:hover .heart-logo-colored {
+  display: block;
+  background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 30px 25px;
+  font-size: 45px;
+}
+
+.footer-main-page {
+  font-size: 29px;
+}
+
+.footer-logo {
+  color: white;
+  margin-right: 15px;
+}
+
+
+/* Menu à la française */
+.image-presentation {
+  width: 100%;
+  border-radius: 0;
+}
+
+.restaurant-menu {
+  position: relative;
+  background-color: #F6F6F6;
+  bottom: 95px;
+  padding: 60px 30px 80px 30px;
+  border-radius: 100px 100px 0 0;
+}
+
+.restaurant-name-heart-logo {
+  display: flex;
+  z-index: 1;
+}
+
+.restaurant-name {
+  font-size: 43px;
+  font-style: italic;
+  margin: auto auto auto 0;
+}
+
+.title-menu-page {
+  margin: auto;
+}
+
+.menu-name {
+  margin-top: 100px;
+  font-size: 50px;
+  font-weight: 500;
+  width: 134px;
+  height: 76px;
+  color: darkslategrey;
+  border-bottom: 11px solid powderblue;
+}
+
+.dish-menu {
+  cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 26px 0 rgb(0 0 0 / 20%);
+  margin-bottom: 80px;
+  justify-content: space-between;
+}
+
+.dish-menu h3 {
+  margin: 15px 0 0 15px;
+}
+
+.paragr-style {
+  margin: 15px;
+}
+
+.price-menu {
+  font-weight: bold;
+  font-size: 46px;
+}
+
+.ingredients-price-spacing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-button {
+  text-align: center;
+}
+
+.compress-style {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 31px;
+  padding: 6px;
+ }
+
+.animation-check {
+  background-color: #99E2D0;
+  position: relative;
+  right: -216%;
+  transition: 0.4s;
+}
+
+.check-logo {
+  color: white;
+  padding: 44px 70px;
+  transform: rotate(-360deg);
+  transition: transform 500ms ease-in-out;
+}
+
+.price-style {
+  font-weight: bold;
+  font-size: 41px;
+  margin: 15px;
+  margin-top: 100px;
+}
+
+.price-moving-div {
+  position: relative;
+  right: -216px;
+  transition: 0.5s;
+}
+
+.dish-menu:hover > .price-moving-div {
+  right: 0;
+}
+
+.dish-menu:hover > .animation-check {
+  right: 0;
+}
+
+.dish-menu:hover > .animation-check > .check-logo {
+  transform: rotate(0deg);
+}
+
+.descr-width {
+  flex-grow: 4;
+}
+
+@keyframes appearing-menu {
+  from {
+    visibility: visible;
+    bottom: -70px;
+    opacity: 0;
+    }
+  to {
+    visibility: visible;
+    bottom: 0px;
+    opacity: 1;
+    }
+}
+
+.dish-1 {
+  visibility: hidden;
+  position: relative;
+  animation: appearing-menu 1s forwards;
+}
+
+.dish-2 {
+  visibility: hidden;
+  position: relative;
+  animation: appearing-menu 1s forwards;
+  animation-delay: 0.2s;
+}
+
+.dish-3 {
+  visibility: hidden;
+  position: relative;
+  animation: appearing-menu 1s forwards;
+  animation-delay: 0.4s;
+}
+
+.dish-4 {
+  visibility: hidden;
+  position: relative;
+  animation: appearing-menu 1s forwards;
+  animation-delay: 0.6s;
+}
