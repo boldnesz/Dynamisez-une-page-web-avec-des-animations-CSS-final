@@ -6,6 +6,7 @@ body {
 /* Pour éviter le soulignement des anchors */
 a {
   text-decoration: none;
+  color: black;
 }
 
 /* partie où est renseignée la geolocalisation de l'utilisateur */
@@ -299,15 +300,18 @@ footer {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 31px;
+  font-size: 37px;
   padding: 6px;
  }
 
-.animation-check {
-  background-color: #99E2D0;
-  position: relative;
-  right: -216%;
-  transition: 0.4s;
+ .animation-check {
+   background-color: #99E2D0;
+   width: 0px;
+   transition: 0.4s;
+ }
+
+ .dish-menu:hover > .animation-check {
+  width: 220px;
 }
 
 .check-logo {
@@ -324,26 +328,12 @@ footer {
   margin-top: 100px;
 }
 
-.price-moving-div {
-  position: relative;
-  right: -216px;
-  transition: 0.5s;
-}
-
-.dish-menu:hover > .price-moving-div {
-  right: 0;
-}
-
-.dish-menu:hover > .animation-check {
-  right: 0;
-}
-
 .dish-menu:hover > .animation-check > .check-logo {
   transform: rotate(0deg);
 }
 
 .descr-width {
-  flex-grow: 4;
+  width: 100%;
 }
 
 @keyframes appearing-menu {
