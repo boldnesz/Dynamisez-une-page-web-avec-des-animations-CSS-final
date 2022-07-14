@@ -3,186 +3,173 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-/* Pour éviter le soulignement des anchors */
 a {
   text-decoration: none;
-  color: black;
 }
 
-/* partie où est renseignée la geolocalisation de l'utilisateur */
 .user-location {
   background-color: #EAEAEA;
-  padding: 40px;
+  padding: 1px;
 }
 
-/* logo de la marque en tête de page */
 .logo-ohmyfood {
   width: 50%;
-  margin: 40px auto;
+  margin: 10px auto;
   display: block;
   border-radius: 0;
   height: auto;
 }
 
-/* logo point de géolocalisation à côté de la location de l'utilisateur */
 .map-logo {
   margin-right: 40px;
 }
 
-/* texte du lieu de géolocalisation */
 .paragraph {
   text-align: center;
   font-weight: bold;
   font-size: 15px;
 }
 
-/* texte de la partie fonctionnement */
 .paragraph-fonct {
-  font-size: 45px;
+  font-size: 16px;
   font-weight: bold;
   display: flex;
 }
 
-/* bloc "réservez le menu qui vous convient" */
 .reservation-menu {
   background-color: #F6F6F6;
-  padding: 122px 30px;
+  padding: 54px 30px;
   text-align: center;
 }
 
-/* texte dans le bloc du dessus */
-.site-presentation {
-  margin: 50px 0;
+.h1-welcome-page {
+  font-size: 25px;
 }
 
-/* titre de la page */
+.site-presentation {
+  margin: 28px 0;
+  font-size: 17px;
+}
+
 h1 {
   margin-top: 0;
 }
 
-/* sous-titres de la page */
 h2 {
-  margin-bottom: 50px;
+  margin-bottom: 17px;
 }
 
-/* Bouton "explorez nos restaurants" */
 .restaurant-list-button {
   background-image: linear-gradient(to top left, #AB5EDB, #E972DA);
   border-radius: 100px;
   color: white;
-  padding: 40px 60px;
+  padding: 18px 25px;
   text-decoration: none;
   display: inline-block;
-  font-size: 50px;
+  font-size: 15px;
   font-weight: bold;
-  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 38px 33px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 8px 6px 0 rgb(0 0 0 / 20%);
 }
 
-/* bloc expliquant le fonctionnement */
 .fonctionnement {
-  margin: 120px 5%;
+  margin: 50px 5%;
 }
 
-/* étape du fonctionnement */
+.h2-welcome-page {
+  font-size: 24px;
+}
+
 .step {
-  padding: 50px 0;
-  margin: 50px 0 50px 42px;
+  padding: 7px;
+  margin: 18px;
   background-color: #F6F6F6;
-  border-radius: 50px;
+  border-radius: 20px;
   box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 26px 0 rgb(0 0 0 / 20%);
 }
 
-/* numéro des étapes du fonctionnement */
+.step-text {
+  font-size: 15px;
+}
+
 .step-number {
   background-color: #9356DC;
   margin: auto 0;
   color: white;
-  padding: 20px 15px;
+  padding: 6px 4px;
   border-radius: 100px;
   position: relative;
-  left: -41px;
+  left: -20px;
 }
 
-/* logo pour chaque étape de fonctionnement */
 .step-logo {
   color: #838383;
   margin: auto 28px;
 }
 
-/* bloc liste des restaurants  */
+
 .restaurant-list {
-  padding: 122px 5%;
+  padding: 12px 5%;
   background-color: #F6F6F6;
 }
 
-/* bloc div pour un restaurant */
 .restaurant {
-  border-radius: 50px;
-  padding-bottom: 25px;
-  margin-bottom: 80px;
+  border-radius: 20px;
+  margin-bottom: 25px;
   box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 26px 0 rgb(0 0 0 / 20%);
 }
 
-/* vignette "Nouveau" en haut à droite de l'image d'un resto */
 .new {
   position: absolute;
-  right: 100px;
+  right: 35px;
   z-index: 1;
   background-color: #99E2D0;
-  padding: 17px;
-  font-size: 48px;
+  padding: 8px;
+  font-size: 17px;
   color: #159374;
-  border-radius: 12px;
+  border-radius: 3px;
+  font-weight: bold;
 }
 
-/* réglage général des images */
 img {
-  border-radius: 50px 50px 0 0;
+  border-radius: 20px 20px 0 0;
   width: 100%;
-  height: 440px;
+  height: 172px;
   object-fit: cover;
 }
 
-/* Mise en page flex pour aligner le nom du restaurant et le logo coeur */
 .restaurant-details-flexbox {
   display: flex;
   justify-content: space-between;
 }
 
-/* bloc du nom de restaurant + localisation */
 .restaurant-descr {
   margin-left: 20px;
-  font-size: 47px;
+  font-size: 20px;
 }
 
-/* nom du restaurant sur index.html */
 .restaurant-descr h3 {
-  margin: 15px 0;
+  margin: 5px 0;
 }
 
-/* lieu du restaurant sur index.html */
 .restaurant-descr p {
-  margin: 15px 0;
+  margin: 6px 0;
+  font-size: 18px;
 }
 
-/* bouton "j'aime" en forme de coeur */
 .heart-logo {
-  margin: 42px;
+  margin: 0px 9px 0 0;
 }
 
-/* bouton "j'aime" en forme de coeur coloré au moment du clic*/
 .heart-logo-colored {
-  margin: 42px;
+  margin: 0px 9px 0 0;
 }
 
-/* Div à l'intérieur duquel se trouve le logo de coeur */
 .div-heart-logo {
   background: darkslategrey;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* détail de la manip à revoir - DEBUT */
 .div-heart-logo:hover .heart-logo,
 .div-heart-logo .heart-logo-colored {
   display: none;
@@ -197,9 +184,7 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* détail de la manip à revoir - FIN */
 
-/* pied de page */
 footer {
   background-color: #353535;
   color: white;
@@ -207,27 +192,22 @@ footer {
   font-size: 45px;
 }
 
-/* pour remédier à un souci de font-size sur la page index-html */
 .footer-main-page {
   font-size: 29px;
 }
 
-/* les logos présents dans le pied de page */
 .footer-logo {
   color: white;
   margin-right: 15px;
 }
 
 
-/* A partir d'ici : réglages des pages menu des restaurants */
-
-/* image d'accueil page du restaurant */
+/* Menu à la française */
 .image-presentation {
   width: 100%;
   border-radius: 0;
 }
 
-/* bloc menu du restaurant */
 .restaurant-menu {
   position: relative;
   background-color: #F6F6F6;
@@ -236,17 +216,19 @@ footer {
   border-radius: 100px 100px 0 0;
 }
 
-/* nom du restaurant et coeur à côté sur la page du menu du restaurant */
 .restaurant-name-heart-logo {
   display: flex;
   z-index: 1;
 }
 
-/* nom du restaurant sur la page du menu du restaurant */
 .restaurant-name {
   font-size: 43px;
   font-style: italic;
   margin: auto auto auto 0;
+}
+
+.restaurant-name-welcome-page {
+  font-size: 18px;
 }
 
 .title-menu-page {
@@ -300,18 +282,15 @@ footer {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 37px;
+  font-size: 31px;
   padding: 6px;
  }
 
- .animation-check {
-   background-color: #99E2D0;
-   width: 0px;
-   transition: 0.4s;
- }
-
- .dish-menu:hover > .animation-check {
-  width: 220px;
+.animation-check {
+  background-color: #99E2D0;
+  position: relative;
+  right: -216%;
+  transition: 0.4s;
 }
 
 .check-logo {
@@ -328,12 +307,26 @@ footer {
   margin-top: 100px;
 }
 
+.price-moving-div {
+  position: relative;
+  right: -216px;
+  transition: 0.5s;
+}
+
+.dish-menu:hover > .price-moving-div {
+  right: 0;
+}
+
+.dish-menu:hover > .animation-check {
+  right: 0;
+}
+
 .dish-menu:hover > .animation-check > .check-logo {
   transform: rotate(0deg);
 }
 
 .descr-width {
-  width: 100%;
+  flex-grow: 4;
 }
 
 @keyframes appearing-menu {
