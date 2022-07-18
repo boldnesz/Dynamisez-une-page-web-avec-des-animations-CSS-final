@@ -1,0 +1,24 @@
+@media screen and (min-width: 688px) {
+    .flexbox-container {
+        display: flex;
+    }
+
+    .restaurant {
+        width: 25%;
+        margin: 5px;
+    }
+
+    .restaurant-name-welcome-page {
+        font-size: 15px;
+    }
+
+    .restaurant-descr {
+        margin: 4px 0;
+    }
+
+    .new {
+        right: auto;
+        border-radius: 0 10px 10px 0;
+    }
+
+}
