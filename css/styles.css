@@ -30,7 +30,7 @@ a {
 }
 
 .arrow-margin {
-  margin: auto 0px;
+  margin: auto 0 auto 15px;
 }
 
 .map-logo {
@@ -85,8 +85,9 @@ h2 {
 }
 
 .order-button-design {
-  padding: 33px 62px;
-  font-size: 35px;
+  padding: 16px 36px;
+  margin-top: 24px;
+  font-size: 14px;
 }
 
 .fonctionnement {
@@ -207,7 +208,7 @@ footer {
   background-color: #353535;
   color: white;
   padding: 30px 25px;
-  font-size: 45px;
+  font-size: 13px;
 }
 
 .footer-main-page {
@@ -227,16 +228,16 @@ footer > a {
 /* Menu à la française */
 .image-presentation {
   width: 100%;
-  height: 500px;
+  height: 250px;
   border-radius: 0;
 }
 
 .restaurant-menu {
   position: relative;
+  bottom: 41px;
   background-color: #F6F6F6;
-  bottom: 95px;
-  padding: 60px 30px 80px 30px;
-  border-radius: 100px 100px 0 0;
+  padding: 13px 30px 40px 30px;
+  border-radius: 30px 30px 0 0;
 }
 
 .restaurant-name-heart-logo {
@@ -245,7 +246,7 @@ footer > a {
 }
 
 .restaurant-name {
-  font-size: 43px;
+  font-size: 19px;
   font-style: italic;
   margin: auto auto auto 0;
 }
@@ -259,13 +260,11 @@ footer > a {
 }
 
 .menu-name {
-  margin-top: 100px;
-  font-size: 50px;
+  font-size: 19px;
   font-weight: 500;
-  width: 134px;
-  height: 76px;
+  width: 49px;
   color: darkslategrey;
-  border-bottom: 11px solid powderblue;
+  border-bottom: 4px solid powderblue;
 }
 
 .dish-menu {
@@ -273,18 +272,18 @@ footer > a {
   display: flex;
   overflow: hidden;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 17px;
   box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 26px 0 rgb(0 0 0 / 20%);
-  margin-bottom: 80px;
+  margin-bottom: 13px;
   justify-content: space-between;
 }
 
 .dish-menu h3 {
-  margin: 15px 0 0 15px;
+  margin: 0 0 0 0;
 }
 
 .paragr-style {
-  margin: 15px;
+  margin: 0 0 0 0;
 }
 
 .price-menu {
@@ -305,7 +304,7 @@ footer > a {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 31px;
+  font-size: 12px;
   padding: 6px;
  }
 
@@ -318,21 +317,21 @@ footer > a {
 
 .check-logo {
   color: white;
-  padding: 44px 70px;
+  padding: 22px 15px;
   transform: rotate(-360deg);
-  transition: transform 500ms ease-in-out;
+  transition: transform 750ms ease-in-out;
 }
 
 .price-style {
   font-weight: bold;
-  font-size: 41px;
-  margin: 15px;
-  margin-top: 100px;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-right: 2px;
 }
 
 .price-moving-div {
   position: relative;
-  right: -216px;
+  right: -46px;
   transition: 0.5s;
 }
 
@@ -392,3 +391,10 @@ footer > a {
   animation-delay: 0.6s;
 }
 
+.home-button {
+  display: none;
+}
+
+main {
+  background-color: #F6F6F6;
+}

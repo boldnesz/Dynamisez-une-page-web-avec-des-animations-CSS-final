@@ -1,10 +1,20 @@
 @media screen and (min-width: 688px) {
+
     .flexbox-container {
         display: flex;
     }
 
     .restaurant {
         width: 25%;
+        margin: 10px;
+    }
+
+    .flexbox-container-menu {
+        display: flex;
+    }
+
+    .flexbox-menu {
+        width: 33%;
         margin: 5px;
     }
 
@@ -19,6 +29,44 @@
     .new {
         right: auto;
         border-radius: 0 10px 10px 0;
+    }
+
+    .h2-welcome-page {
+        text-align: center;
+    }
+
+    .fonctionnement {
+        margin: 50px 23%;
+    }
+
+    .home-button {
+        display: block;
+        align-self: center;
+        margin-right: 15px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .home-button:hover {
+        font-weight: bold;
+      }
+    
+    .arrow-margin {
+        display: none;
+    }
+
+    .logo-ohmyfood {
+        width: 252px;
+        margin: 10px auto 10px 10px;
+    }
+
+    .restaurant-descr h3 {
+        margin: 5px 5px;
+    }
+
+    .restaurant-descr p {
+        margin: 6px 5px;
+        font-size: 15px;
     }
 
 }

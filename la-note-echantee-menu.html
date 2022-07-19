@@ -3,11 +3,13 @@
 
   <head>
     <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>OhMyFood</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/tablet.css">
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,8 +25,9 @@
 
     <!-- logo en tête de page -->
     <header class="logo-ohmyfood-section logo-ohmyfood-section-menu-page">
-      <a class="arrow-margin" href="index.html"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
+      <a class="arrow-margin" href="index.html"><i class="fa-solid fa-arrow-left fa-1x"></i></a>
       <img src="images/ohmyfood.png" class="logo-ohmyfood" alt="logo ohmyfood">
+      <a class="home-button" href="index.html"><p>Accueil</p></a>
     </header>
 
     <main>
@@ -40,175 +43,183 @@
             <h1 class="title-menu-page">La note enchantée</h1>
           </div>
           <div class="div-heart-logo">
-            <a href="#"><i class="fa-regular fa-heart fa-4x heart-logo"></i></a>
-            <a href="#"><i class="fa-solid fa-heart fa-4x heart-logo-colored"></i></a>
+            <a href="#"><i class="fa-regular fa-heart fa-2x heart-logo"></i></a>
+            <a href="#"><i class="fa-solid fa-heart fa-2x heart-logo-colored"></i></a>
           </div>
         </div>
 
-        <!-- Entrées -->
-        <div>
-          <h2 class="menu-name">ENTRÉES</h2>
-        </div>
+        <div class="flexbox-container-menu">
+          <div class="flexbox-menu">
+            <!-- Entrées -->
+            <div>
+              <h2 class="menu-name">ENTRÉES</h2>
+            </div>
 
-        <!-- Div exemple d'assiette - DEBUT -->
-        <div class="dish-menu dish-1">
-          <div class="compress-style descr-width">
-            <h3 class="compress-style">Ravioles de foie gras</h3>
-            <div class="ingredients-price-spacing">
-              <p class="compress-style paragr-style">Accompagnés de leur crème à la truffe</p>
+            <!-- Div exemple d'assiette - DEBUT -->
+            <div class="dish-menu dish-1">
+              <div class="compress-style descr-width">
+                <h3 class="compress-style">Ravioles de foie gras</h3>
+                <div class="ingredients-price-spacing">
+                  <p class="compress-style paragr-style">Accompagnés de leur crème à la truffe</p>
+                </div>
+              </div>
+              <div class="price-moving-div">
+                <p class="price-style">25€</p>
+              </div>
+              <div class="animation-check">
+                <i class="fa-solid fa-circle-check fa-1x check-logo"></i>
+              </div>
+            </div>
+            <!-- Div exemple d'assiette - FIN -->
+
+            <div class="dish-menu dish-2">
+              <div class="compress-style descr-width">
+                <h3 class="compress-style">Caviar osciètre</h3>
+                <div class="ingredients-price-spacing">
+                  <p class="compress-style paragr-style">Sur blini à la farine de blé noir</p>
+                </div>
+              </div>
+              <div class="price-moving-div">
+                <p class="price-style">35€</p>
+              </div>
+              <div class="animation-check">
+                <i class="fa-solid fa-circle-check fa-1x check-logo"></i>
+              </div>
+            </div>
+
+            <div class="dish-menu dish-3">
+              <div class="compress-style descr-width">
+                <h3 class="compress-style">Homard et espuma de potiron</h3>
+                <div class="ingredients-price-spacing">
+                  <p class="compress-style paragr-style">Mariné aux zests d'orange</p>
+                </div>
+              </div>
+              <div class="price-moving-div">
+                <p class="price-style">20€</p>
+              </div>
+              <div class="animation-check">
+                <i class="fa-solid fa-circle-check fa-1x check-logo"></i>
+              </div>
+            </div>
+
+            <div class="dish-menu dish-4">
+              <div class="compress-style descr-width">
+                <h3 class="compress-style">Foie gras de canard cuit entier</h3>
+                <div class="ingredients-price-spacing">
+                  <p class="compress-style paragr-style">Confiture de figue et pain toasté</p>
+                </div>
+              </div>
+              <div class="price-moving-div">
+                <p class="price-style">35€</p>
+              </div>
+              <div class="animation-check">
+                <i class="fa-solid fa-circle-check fa-1x check-logo"></i>
+              </div>
             </div>
           </div>
-          <div class="price-moving-div">
-            <p class="price-style">25€</p>
-          </div>
-          <div class="animation-check">
-            <i class="fa-solid fa-circle-check fa-4x check-logo"></i>
-          </div>
-        </div>
-        <!-- Div exemple d'assiette - FIN -->
 
-        <div class="dish-menu dish-2">
-          <div class="compress-style descr-width">
-            <h3 class="compress-style">Caviar osciètre</h3>
-            <div class="ingredients-price-spacing">
-              <p class="compress-style paragr-style">Sur blini à la farine de blé noir</p>
+          <div class="flexbox-menu">
+            <!-- Plats -->
+            <div>
+              <h2 class="menu-name">PLATS</h2>
+            </div>
+
+            <div class="dish-menu dish-1">
+              <div class="compress-style descr-width">
+                <h3 class="compress-style">Noix de coquilles Saint-Jacques</h3>
+                <div class="ingredients-price-spacing">
+                  <p class="compress-style paragr-style">Sur lit de purée de céleri-rave</p>
+                </div>
+              </div>
+              <div class="price-moving-div">
+                <p class="price-style">40€</p>
+              </div>
+              <div class="animation-check">
+                <i class="fa-solid fa-circle-check fa-1x check-logo"></i>
+              </div>
+            </div>
+
+            <div class="dish-menu dish-2">
+              <div class="compress-style descr-width">
+                <h3 class="compress-style">Langoustine poêlée</h3>
+                <div class="ingredients-price-spacing">
+                  <p class="compress-style paragr-style">Purée de patate douce</p>
+                </div>
+              </div>
+              <div class="price-moving-div">
+                <p class="price-style">35€</p>
+              </div>
+              <div class="animation-check">
+                <i class="fa-solid fa-circle-check fa-1x check-logo"></i>
+              </div>
+            </div>
+
+            <div class="dish-menu dish-3">
+              <div class="compress-style descr-width">
+                <h3 class="compress-style">Mijoté de queue de boeuf</h3>
+                <div class="ingredients-price-spacing">
+                  <p class="compress-style paragr-style">Et riz sauvage aux zests de citron</p>
+                </div>
+              </div>
+              <div class="price-moving-div">
+                <p class="price-style">44€</p>
+              </div>
+              <div class="animation-check">
+                <i class="fa-solid fa-circle-check fa-1x check-logo"></i>
+              </div>
             </div>
           </div>
-          <div class="price-moving-div">
-            <p class="price-style">35€</p>
-          </div>
-          <div class="animation-check">
-            <i class="fa-solid fa-circle-check fa-4x check-logo"></i>
-          </div>
-        </div>
 
-        <div class="dish-menu dish-3">
-          <div class="compress-style descr-width">
-            <h3 class="compress-style">Homard et espuma de potiron</h3>
-            <div class="ingredients-price-spacing">
-              <p class="compress-style paragr-style">Mariné aux zests d'orange</p>
+          <div class="flexbox-menu">
+            <!-- Dessert -->
+            <div>
+              <h2 class="menu-name">DESSERTS</h2>
             </div>
-          </div>
-          <div class="price-moving-div">
-            <p class="price-style">20€</p>
-          </div>
-          <div class="animation-check">
-            <i class="fa-solid fa-circle-check fa-4x check-logo"></i>
-          </div>
-        </div>
 
-        <div class="dish-menu dish-4">
-          <div class="compress-style descr-width">
-            <h3 class="compress-style">Foie gras de canard cuit entier</h3>
-            <div class="ingredients-price-spacing">
-              <p class="compress-style paragr-style">Confiture de figue et pain toasté</p>
+            <div class="dish-menu dish-1">
+              <div class="compress-style descr-width">
+                <h3 class="compress-style">Macaron noisette et chocolat</h3>
+                <div class="ingredients-price-spacing">
+                  <p class="compress-style paragr-style">Glace au caramel brun et sel de Guérande</p>
+                </div>
+              </div>
+              <div class="price-moving-div">
+                <p class="price-style">18€</p>
+              </div>
+              <div class="animation-check">
+                <i class="fa-solid fa-circle-check fa-1x check-logo"></i>
+              </div>
             </div>
-          </div>
-          <div class="price-moving-div">
-            <p class="price-style">35€</p>
-          </div>
-          <div class="animation-check">
-            <i class="fa-solid fa-circle-check fa-4x check-logo"></i>
-          </div>
-        </div>
 
-        <!-- Plats -->
-        <div>
-          <h2 class="menu-name">PLATS</h2>
-        </div>
-
-        <div class="dish-menu dish-1">
-          <div class="compress-style descr-width">
-            <h3 class="compress-style">Noix de coquilles Saint-Jacques</h3>
-            <div class="ingredients-price-spacing">
-              <p class="compress-style paragr-style">Sur lit de purée de céleri-rave</p>
+            <div class="dish-menu dish-2">
+              <div class="compress-style descr-width">
+                <h3 class="compress-style">Baba au rhum revisité</h3>
+                <div class="ingredients-price-spacing">
+                  <p class="compress-style paragr-style">Avec son coulis de citron</p>
+                </div>
+              </div>
+              <div class="price-moving-div">
+                <p class="price-style">22€</p>
+              </div>
+              <div class="animation-check">
+                <i class="fa-solid fa-circle-check fa-1x check-logo"></i>
+              </div>
             </div>
-          </div>
-          <div class="price-moving-div">
-            <p class="price-style">40€</p>
-          </div>
-          <div class="animation-check">
-            <i class="fa-solid fa-circle-check fa-4x check-logo"></i>
-          </div>
-        </div>
 
-        <div class="dish-menu dish-2">
-          <div class="compress-style descr-width">
-            <h3 class="compress-style">Langoustine poêlée</h3>
-            <div class="ingredients-price-spacing">
-              <p class="compress-style paragr-style">Purée de patate douce</p>
+            <div class="dish-menu dish-3">
+              <div class="compress-style descr-width">
+                <h3 class="compress-style">Tarte au citron meringuée</h3>
+                <div class="ingredients-price-spacing">
+                  <p class="compress-style paragr-style">Destructurée</p>
+                </div>
+              </div>
+              <div class="price-moving-div">
+                <p class="price-style">23€</p>
+              </div>
+              <div class="animation-check">
+                <i class="fa-solid fa-circle-check fa-1x check-logo"></i>
+              </div>
             </div>
-          </div>
-          <div class="price-moving-div">
-            <p class="price-style">35€</p>
-          </div>
-          <div class="animation-check">
-            <i class="fa-solid fa-circle-check fa-4x check-logo"></i>
-          </div>
-        </div>
-
-        <div class="dish-menu dish-3">
-          <div class="compress-style descr-width">
-            <h3 class="compress-style">Mijoté de queue de boeuf</h3>
-            <div class="ingredients-price-spacing">
-              <p class="compress-style paragr-style">Et riz sauvage aux zests de citron</p>
-            </div>
-          </div>
-          <div class="price-moving-div">
-            <p class="price-style">44€</p>
-          </div>
-          <div class="animation-check">
-            <i class="fa-solid fa-circle-check fa-4x check-logo"></i>
-          </div>
-        </div>
-
-        <!-- Dessert -->
-        <div>
-          <h2 class="menu-name">DESSERTS</h2>
-        </div>
-
-        <div class="dish-menu dish-1">
-          <div class="compress-style descr-width">
-            <h3 class="compress-style">Macaron noisette et chocolat</h3>
-            <div class="ingredients-price-spacing">
-              <p class="compress-style paragr-style">Glace au caramel brun et sel de Guérande</p>
-            </div>
-          </div>
-          <div class="price-moving-div">
-            <p class="price-style">18€</p>
-          </div>
-          <div class="animation-check">
-            <i class="fa-solid fa-circle-check fa-4x check-logo"></i>
-          </div>
-        </div>
-
-        <div class="dish-menu dish-2">
-          <div class="compress-style descr-width">
-            <h3 class="compress-style">Baba au rhum revisité</h3>
-            <div class="ingredients-price-spacing">
-              <p class="compress-style paragr-style">Avec son coulis de citron</p>
-            </div>
-          </div>
-          <div class="price-moving-div">
-            <p class="price-style">22€</p>
-          </div>
-          <div class="animation-check">
-            <i class="fa-solid fa-circle-check fa-4x check-logo"></i>
-          </div>
-        </div>
-
-        <div class="dish-menu dish-3">
-          <div class="compress-style descr-width">
-            <h3 class="compress-style">Tarte au citron meringuée</h3>
-            <div class="ingredients-price-spacing">
-              <p class="compress-style paragr-style">Destructurée</p>
-            </div>
-          </div>
-          <div class="price-moving-div">
-            <p class="price-style">23€</p>
-          </div>
-          <div class="animation-check">
-            <i class="fa-solid fa-circle-check fa-4x check-logo"></i>
           </div>
         </div>
 
@@ -225,7 +236,7 @@
       <p><i class="fa-solid fa-utensils fa-fw footer-logo fork"></i>Proposer un restaurant</p>
       <p><i class="fa-solid fa-handshake-angle fa-fw footer-logo"></i>Devenir partenaire</p>
       <p>Mentions légales</p>
-      <p>Contact</p>
+      <a href="mailto:someone@yoursite.com"><p>Contact</p></a>
     </footer>
 
   </body>
