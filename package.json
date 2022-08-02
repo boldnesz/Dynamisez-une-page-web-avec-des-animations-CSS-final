@@ -1,0 +1,22 @@
+{
+  "name": "dynamisez-une-page-web-avec-des-animations-css-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boldnesz/Dynamisez-une-page-web-avec-des-animations-CSS-final.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boldnesz/Dynamisez-une-page-web-avec-des-animations-CSS-final/issues"
+  },
+  "homepage": "https://github.com/boldnesz/Dynamisez-une-page-web-avec-des-animations-CSS-final#readme",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}

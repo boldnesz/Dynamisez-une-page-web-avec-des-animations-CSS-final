@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -8,7 +10,7 @@ a {
 }
 
 .user-location {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   padding: 1px;
 }
 
@@ -49,7 +51,7 @@ a {
 }
 
 .reservation-menu {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 54px 30px;
   text-align: center;
 }
@@ -72,7 +74,7 @@ h2 {
 }
 
 .restaurant-list-button {
-  background-image: linear-gradient(to top left, #AB5EDB, #E972DA);
+  background-image: linear-gradient(to top left, #9356dc, #ff79da);
   border-radius: 100px;
   color: white;
   padding: 14px 19px;
@@ -81,6 +83,11 @@ h2 {
   font-size: 15px;
   font-weight: bold;
   box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 8px 6px 0 rgb(0 0 0 / 20%);
+}
+
+.restaurant-list-button:hover {
+  background-image: linear-gradient(to top left, #b27fd2, #e697dc);
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 6px 0 rgb(0 0 0 / 20%);
 }
 
 .order-button-design {
@@ -100,7 +107,7 @@ h2 {
 .step {
   padding: 7px;
   margin: 18px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 20px;
   box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 26px 0 rgb(0 0 0 / 20%);
 }
@@ -110,7 +117,7 @@ h2 {
 }
 
 .step-number {
-  background-color: #9356DC;
+  background-color: #9356dc;
   margin: auto 0;
   color: white;
   padding: 6px 4px;
@@ -124,23 +131,23 @@ h2 {
   margin: auto 28px;
 }
 
-
 .restaurant-list {
   padding: 12px 5%;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .restaurant {
   border-radius: 20px;
   margin-bottom: 25px;
+  position: relative;
   box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 26px 0 rgb(0 0 0 / 20%);
 }
 
 .new {
   position: absolute;
-  right: 35px;
+  right: 5px;
   z-index: 1;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   padding: 8px;
   font-size: 17px;
   color: #159374;
@@ -219,10 +226,9 @@ footer {
   margin-right: 15px;
 }
 
-footer>a {
+footer > a {
   color: white;
 }
-
 
 /* Menu à la française */
 .image-presentation {
@@ -234,7 +240,7 @@ footer>a {
 .restaurant-menu {
   position: relative;
   bottom: 41px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 13px 30px 40px 30px;
   border-radius: 30px 30px 0 0;
 }
@@ -256,6 +262,7 @@ footer>a {
 
 .title-menu-page {
   margin: auto;
+  font-family: "Shrikhand", cursive;
 }
 
 .menu-name {
@@ -308,7 +315,7 @@ footer>a {
 }
 
 .animation-check {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   position: relative;
   right: -216%;
   transition: 0.4s;
@@ -334,15 +341,15 @@ footer>a {
   transition: 0.5s;
 }
 
-.dish-menu:hover>.price-moving-div {
+.dish-menu:hover > .price-moving-div {
   right: 0;
 }
 
-.dish-menu:hover>.animation-check {
+.dish-menu:hover > .animation-check {
   right: 0;
 }
 
-.dish-menu:hover>.animation-check>.check-logo {
+.dish-menu:hover > .animation-check > .check-logo {
   transform: rotate(0deg);
 }
 
@@ -396,7 +403,7 @@ footer>a {
 }
 
 main {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .loader {
@@ -420,4 +427,79 @@ main {
   100% {
     visibility: hidden;
   }
+}
+
+@media screen and (min-width: 688px) {
+  .flexbox-container {
+    display: flex;
+  }
+
+  .restaurant {
+    width: 25%;
+    margin: 10px;
+  }
+
+  .flexbox-container-menu {
+    display: flex;
+  }
+
+  .flexbox-menu {
+    width: 33%;
+    margin: 5px;
+  }
+
+  .restaurant-name-welcome-page {
+    font-size: 15px;
+  }
+
+  .restaurant-descr {
+    margin: 4px 0;
+  }
+
+  .new {
+    right: auto;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .h2-welcome-page {
+    text-align: center;
+  }
+
+  .fonctionnement {
+    margin: 50px 23%;
+  }
+
+  .home-button {
+    display: block;
+    align-self: center;
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .home-button:hover {
+    font-weight: bold;
+  }
+
+  .arrow-margin {
+    display: none;
+  }
+
+  .logo-ohmyfood {
+    width: 252px;
+    margin: 10px auto 10px 10px;
+  }
+
+  .restaurant-descr h3 {
+    margin: 5px 5px;
+  }
+
+  .restaurant-descr p {
+    margin: 6px 5px;
+    font-size: 15px;
+  }
+}
+
+.font-logo {
+  font-family: "Shrikhand", cursive;
 }

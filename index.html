@@ -1,154 +1,194 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>OhMyFood</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>OhMyFood</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/desktop.css">
-  <link rel="stylesheet" href="css/tablet.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/de8316780b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/de8316780b.js" crossorigin="anonymous"></script>
-
-</head>
-
-<body>
-  <div class="loader">
-    <i class="fas fa-circle-notch fa-3x fa-spin"></i>
-  </div>
-  <header class="logo-ohmyfood-section logo-ohmyfood-section-menu-page">
-    <img src="images\ohmyfood.png" class="logo-ohmyfood" alt="logo ohmyfood">
-    <a class="home-button" href="#section-fonctionnement">
-      <p>Fonctionnement</p>
-    </a>
-    <a class="home-button" href="#section-restaurants">
-      <p>Restaurants</p>
-    </a>
-  </header>
-
-  <div class="user-location">
-    <p class="paragraph"><i class="fa-solid fa-location-dot map-logo"></i>Paris, Belleville</p>
-  </div>
-
-  <div class="reservation-menu">
-    <h1 class="h1-welcome-page">Réservez le menu qui vous convient</h1>
-    <p class="site-presentation">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-    <a href="#section-restaurants" class="restaurant-list-button">Explorer nos restaurants</a>
-  </div>
-
-  <div id="section-fonctionnement" class="fonctionnement">
-    <h2 class="h2-welcome-page">Fonctionnement</h2>
-    <div class="step">
-      <div class="paragraph-fonct"><i class="fa-solid fa-1 fa-fw step-number"></i><i
-          class="fa-solid fa-mobile-screen-button fa-fw step-logo"></i>
-        <p class="step-text">Choisissez un restaurant</p>
-      </div>
+  <body>
+    <div class="loader">
+      <i class="fas fa-circle-notch fa-3x fa-spin"></i>
     </div>
-    <div class="step">
-      <div class="paragraph-fonct"><i class="fa-solid fa-2 fa-fw step-number"></i><i
-          class="fa-solid fa-list fa-fw step-logo"></i>
-        <p class="step-text">Composez votre menu</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="paragraph-fonct"><i class="fa-solid fa-3 fa-fw step-number"></i><i
-          class="fa-solid fa-store fa-fw step-logo"></i>
-        <p class="step-text">Dégustez au restaurant</p>
-      </div>
+    <header class="logo-ohmyfood-section logo-ohmyfood-section-menu-page">
+      <img
+        src="images\ohmyfood.png"
+        class="logo-ohmyfood"
+        alt="logo ohmyfood"
+      />
+      <a class="home-button" href="#section-fonctionnement">
+        <p>Fonctionnement</p>
+      </a>
+      <a class="home-button" href="#section-restaurants">
+        <p>Restaurants</p>
+      </a>
+    </header>
+
+    <div class="user-location">
+      <p class="paragraph">
+        <i class="fa-solid fa-location-dot map-logo"></i>
+        <input type="text" placeholder="Paris, Belleville" />
+      </p>
     </div>
 
-  </div>
+    <div class="reservation-menu">
+      <h1 class="h1-welcome-page">Réservez le menu qui vous convient</h1>
+      <p class="site-presentation">
+        Découvrez des restaurants d'exception, sélectionnés par nos soins.
+      </p>
+      <a href="#section-restaurants" class="restaurant-list-button"
+        >Explorer nos restaurants</a
+      >
+    </div>
 
-  <div id="section-restaurants" class="restaurant-list">
-    <h2 class="h2-welcome-page">Restaurants</h2>
-
-    <div class="flexbox-container">
-      <div class="restaurant">
-        <p class="new">Nouveau</p>
-        <a href="la-palette-du-gout-menu.html"><img src="images/restaurants/la-palette-du-gout.jpg"
-            alt="restaurant la palette du goût"></a>
-        <div class="restaurant-details-flexbox">
-          <div class="restaurant-descr">
-            <h3 class="restaurant-name-welcome-page">La palette du goût</h3>
-            <p>Ménilmontant</p>
-          </div>
-          <div class="div-heart-logo">
-            <a href="#"><i class="fa-regular fa-heart fa-1x heart-logo"></i></a>
-            <a href="#"><i class="fa-solid fa-heart fa-1x heart-logo-colored"></i></a>
-          </div>
+    <div id="section-fonctionnement" class="fonctionnement">
+      <h2 class="h2-welcome-page">Fonctionnement</h2>
+      <div class="step">
+        <div class="paragraph-fonct">
+          <i class="fa-solid fa-1 fa-fw step-number"></i
+          ><i class="fa-solid fa-mobile-screen-button fa-fw step-logo"></i>
+          <p class="step-text">Choisissez un restaurant</p>
         </div>
       </div>
-
-      <div class="restaurant">
-        <p class="new">Nouveau</p>
-        <a href="la-note-echantee-menu.html"><img src="images\restaurants\la-note-enchantee.jpg"
-            alt="restaurant La note enchantée"></a>
-        <div class="restaurant-details-flexbox">
-          <div class="restaurant-descr">
-            <h3 class="restaurant-name-welcome-page">La note enchantée</h3>
-            <p>Charonne</p>
-          </div>
-          <div class="div-heart-logo">
-            <a href="#"><i class="fa-regular fa-heart fa-1x heart-logo"></i></a>
-            <a href="#"><i class="fa-solid fa-heart fa-1x heart-logo-colored"></i></a>
-          </div>
+      <div class="step">
+        <div class="paragraph-fonct">
+          <i class="fa-solid fa-2 fa-fw step-number"></i
+          ><i class="fa-solid fa-list fa-fw step-logo"></i>
+          <p class="step-text">Composez votre menu</p>
         </div>
       </div>
-
-      <div class="restaurant">
-        <a href="a-la-francaise-menu.html"><img src="images\restaurants\a-la-francaise.jpg"
-            alt="restaurant A la française"></a>
-        <div class="restaurant-details-flexbox">
-          <div class="restaurant-descr">
-            <h3 class="restaurant-name-welcome-page">A la française</h3>
-            <p>Cité Rouge</p>
-          </div>
-          <div class="div-heart-logo">
-            <a href="#"><i class="fa-regular fa-heart fa-1x heart-logo"></i></a>
-            <a href="#"><i class="fa-solid fa-heart fa-1x heart-logo-colored"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="restaurant">
-        <a href="le-delice-des-sens-menu.html"><img src="images\restaurants\le-delice-des-sens.jpg"
-            alt="restaurant Le délice des sens"></a>
-        <div class="restaurant-details-flexbox">
-          <div class="restaurant-descr">
-            <h3 class="restaurant-name-welcome-page">Le délice des sens</h3>
-            <p>Folie-Méricourt</p>
-          </div>
-          <div class="div-heart-logo">
-            <a href="#"><i class="fa-regular fa-heart fa-1x heart-logo"></i></a>
-            <a href="#"><i class="fa-solid fa-heart fa-1x heart-logo-colored"></i></a>
-          </div>
+      <div class="step">
+        <div class="paragraph-fonct">
+          <i class="fa-solid fa-3 fa-fw step-number"></i
+          ><i class="fa-solid fa-store fa-fw step-logo"></i>
+          <p class="step-text">Dégustez au restaurant</p>
         </div>
       </div>
     </div>
 
-  </div>
+    <div id="section-restaurants" class="restaurant-list">
+      <h2 class="h2-welcome-page">Restaurants</h2>
 
-  <footer class="footer-main-page">
-    <p>ohmyfood</p>
-    <p><i class="fa-solid fa-utensils fa-fw footer-logo fork"></i>Proposer un restaurant</p>
-    <p><i class="fa-solid fa-handshake-angle fa-fw footer-logo"></i>Devenir partenaire</p>
-    <p>Mentions légales</p>
-    <a href="mailto:someone@yoursite.com">
-      <p>Contact</p>
-    </a>
-  </footer>
+      <div class="flexbox-container">
+        <div class="restaurant">
+          <p class="new">Nouveau</p>
+          <a href="la-palette-du-gout-menu.html"
+            ><img
+              src="images/restaurants/la-palette-du-gout.jpg"
+              alt="restaurant la palette du goût"
+          /></a>
+          <div class="restaurant-details-flexbox">
+            <div class="restaurant-descr">
+              <h3 class="restaurant-name-welcome-page">La palette du goût</h3>
+              <p>Ménilmontant</p>
+            </div>
+            <div class="div-heart-logo">
+              <a href="#"
+                ><i class="fa-regular fa-heart fa-1x heart-logo"></i
+              ></a>
+              <a href="#"
+                ><i class="fa-solid fa-heart fa-1x heart-logo-colored"></i
+              ></a>
+            </div>
+          </div>
+        </div>
 
-</body>
+        <div class="restaurant">
+          <p class="new">Nouveau</p>
+          <a href="la-note-echantee-menu.html"
+            ><img
+              src="images\restaurants\la-note-enchantee.jpg"
+              alt="restaurant La note enchantée"
+          /></a>
+          <div class="restaurant-details-flexbox">
+            <div class="restaurant-descr">
+              <h3 class="restaurant-name-welcome-page">La note enchantée</h3>
+              <p>Charonne</p>
+            </div>
+            <a class="div-heart-logo">
+              <i class="fa-regular fa-heart fa-1x heart-logo"></i>
+              <i class="fa-solid fa-heart fa-1x heart-logo-colored"></i>
+            </a>
+          </div>
+        </div>
 
+        <div class="restaurant">
+          <a href="a-la-francaise-menu.html"
+            ><img
+              src="images\restaurants\a-la-francaise.jpg"
+              alt="restaurant A la française"
+          /></a>
+          <div class="restaurant-details-flexbox">
+            <div class="restaurant-descr">
+              <h3 class="restaurant-name-welcome-page">A la française</h3>
+              <p>Cité Rouge</p>
+            </div>
+            <div class="div-heart-logo">
+              <a href="#"
+                ><i class="fa-regular fa-heart fa-1x heart-logo"></i
+              ></a>
+              <a href="#"
+                ><i class="fa-solid fa-heart fa-1x heart-logo-colored"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="restaurant">
+          <a href="le-delice-des-sens-menu.html"
+            ><img
+              src="images\restaurants\le-delice-des-sens.jpg"
+              alt="restaurant Le délice des sens"
+          /></a>
+          <div class="restaurant-details-flexbox">
+            <div class="restaurant-descr">
+              <h3 class="restaurant-name-welcome-page">Le délice des sens</h3>
+              <p>Folie-Méricourt</p>
+            </div>
+            <div class="div-heart-logo">
+              <a href="#"
+                ><i class="fa-regular fa-heart fa-1x heart-logo"></i
+              ></a>
+              <a href="#"
+                ><i class="fa-solid fa-heart fa-1x heart-logo-colored"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-main-page">
+      <p class="font-logo">ohmyfood</p>
+      <p>
+        <i class="fa-solid fa-utensils fa-fw footer-logo fork"></i>Proposer un
+        restaurant
+      </p>
+      <p>
+        <i class="fa-solid fa-handshake-angle fa-fw footer-logo"></i>Devenir
+        partenaire
+      </p>
+      <p>Mentions légales</p>
+      <a href="mailto:someone@yoursite.com">
+        <p>Contact</p>
+      </a>
+    </footer>
+  </body>
 </html>
