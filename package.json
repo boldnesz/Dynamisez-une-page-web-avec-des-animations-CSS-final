@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/boldnesz/Dynamisez-une-page-web-avec-des-animations-CSS-final/issues"
   },
-  "homepage": "https://github.com/boldnesz/Dynamisez-une-page-web-avec-des-animations-CSS-final#readme",
-  "dependencies": {
-    "sass": "^1.54.0"
-  }
+  "homepage": "https://github.com/boldnesz/Dynamisez-une-page-web-avec-des-animations-CSS-final#readme"
 }

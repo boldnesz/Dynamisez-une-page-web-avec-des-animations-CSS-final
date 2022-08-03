@@ -163,8 +163,7 @@ img {
 }
 
 .restaurant-details-flexbox {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
 }
 
 .restaurant-descr {
@@ -181,33 +180,36 @@ img {
   font-size: 18px;
 }
 
-.heart-logo {
-  margin: 10px 9px 0 0;
+.i {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.heart-logo-colored {
-  margin: 10px 9px 0 0;
+.i-2 {
+  position: absolute;
+  right: -5px;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.heart-sol {
+  color: transparent;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 350ms;
+}
+
+.heart-sol:hover {
+  opacity: 1;
 }
 
 .div-heart-logo {
   background: darkslategrey;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.div-heart-logo:hover .heart-logo,
-.div-heart-logo .heart-logo-colored {
-  display: none;
-  background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.div-heart-logo:hover .heart-logo-colored {
-  display: block;
-  background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 footer {
@@ -246,6 +248,7 @@ footer > a {
 }
 
 .restaurant-name-heart-logo {
+  position: relative;
   display: flex;
   z-index: 1;
 }
@@ -491,11 +494,11 @@ main {
   }
 
   .restaurant-descr h3 {
-    margin: 5px 5px;
+    margin: 5px 58px 5px 5px;
   }
 
   .restaurant-descr p {
-    margin: 6px 5px;
+    margin: 6px 56px 5px 5px;
     font-size: 15px;
   }
 }
