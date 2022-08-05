@@ -1,0 +1,23 @@
+@keyframes appearing-menu {
+  from {
+    visibility: visible;
+    bottom: -70px;
+    opacity: 0;
+  }
+
+  to {
+    visibility: visible;
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}

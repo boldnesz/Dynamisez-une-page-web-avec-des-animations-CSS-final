@@ -1,0 +1,105 @@
+.restaurant-menu {
+  position: relative;
+  bottom: 41px;
+  background-color: $blanc;
+  padding: 13px 30px 40px 30px;
+  border-radius: 30px 30px 0 0;
+}
+
+.restaurant-name-heart-logo {
+  position: relative;
+  display: flex;
+  z-index: 1;
+}
+
+.restaurant-name {
+  font-size: 19px;
+  font-style: italic;
+  margin: auto auto auto 0;
+}
+
+.title-menu-page {
+  margin: auto;
+  font-family: "Shrikhand", cursive;
+}
+
+.compress-style {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 12px;
+  padding: 6px;
+}
+
+.descr-width {
+  flex-grow: 4;
+}
+
+.ingredients-price-spacing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragr-style {
+  margin: 0 0 0 0;
+}
+
+.price-moving-div {
+  position: relative;
+  right: -46px;
+  transition: 0.5s;
+}
+
+.dish-menu:hover > .price-moving-div {
+  right: 0;
+}
+
+.price-style {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-right: 2px;
+}
+
+.animation-check {
+  background-color: #99e2d0;
+  position: relative;
+  right: -216%;
+  transition: 0.4s;
+}
+
+.dish-menu:hover > .animation-check {
+  right: 0;
+}
+
+.check-logo {
+  color: white;
+  padding: 22px 15px;
+  transform: rotate(-360deg);
+  transition: transform 750ms ease-in-out;
+}
+
+.dish-menu:hover > .animation-check > .check-logo {
+  transform: rotate(0deg);
+}
+
+.order-button-design {
+  padding: 16px 36px;
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+.order-button {
+  text-align: center;
+}
+
+@media screen and (min-width: 688px) {
+  .flexbox-container-menu {
+    display: flex;
+  }
+
+  .flexbox-menu {
+    width: 33%;
+    margin: 5px;
+  }
+}

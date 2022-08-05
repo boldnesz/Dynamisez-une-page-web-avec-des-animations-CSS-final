@@ -1,0 +1,71 @@
+.restaurant-list {
+  padding: 12px 5%;
+  background-color: $blanc;
+}
+
+.new {
+  position: absolute;
+  right: 5px;
+  z-index: 1;
+  background-color: #99e2d0;
+  padding: 8px;
+  font-size: 17px;
+  color: #159374;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.restaurant-details-flexbox {
+  position: relative;
+}
+
+.restaurant-descr {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.restaurant-descr h3 {
+  margin: 5px 0;
+}
+
+.restaurant-descr p {
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+.restaurant-name-welcome-page {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 688px) {
+  .flexbox-container {
+    display: flex;
+  }
+
+  .restaurant {
+    width: 25%;
+    margin: 10px;
+  }
+
+  .new {
+    right: auto;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .restaurant-descr {
+    margin: 4px 0;
+  }
+
+  .restaurant-descr h3 {
+    margin: 5px 58px 5px 5px;
+  }
+
+  .restaurant-descr p {
+    margin: 6px 56px 5px 5px;
+    font-size: 15px;
+  }
+
+  .restaurant-name-welcome-page {
+    font-size: 15px;
+  }
+}

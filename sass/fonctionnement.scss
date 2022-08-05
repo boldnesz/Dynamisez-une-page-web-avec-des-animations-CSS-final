@@ -1,0 +1,44 @@
+$primary: #9356dc;
+
+.fonctionnement {
+  margin: 50px 5%;
+}
+
+.step {
+  padding: 7px;
+  margin: 18px;
+  background-color: $blanc;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 26px 0 rgb(0 0 0 / 20%);
+}
+
+.paragraph-fonct {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+}
+
+.step-number {
+  background-color: $primary;
+  margin: auto 0;
+  color: white;
+  padding: 6px 4px;
+  border-radius: 100px;
+  position: relative;
+  left: -20px;
+}
+
+.step-logo {
+  color: #838383;
+  margin: auto 28px;
+}
+
+.step-text {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 688px) {
+  .fonctionnement {
+    margin: 50px 23%;
+  }
+}

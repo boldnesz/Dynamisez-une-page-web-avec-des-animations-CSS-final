@@ -1,20 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
-
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
 
-a {
-  text-decoration: none;
+@keyframes appearing-menu {
+  from {
+    visibility: visible;
+    bottom: -70px;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 30px 25px;
+  font-size: 13px;
 }
 
-.user-location {
-  background-color: #eaeaea;
-  padding: 1px;
+.footer-main-page {
+  font-size: 17px;
 }
 
-.logo-ohmyfood {
+.footer-logo {
+  color: white;
+  margin-right: 15px;
+}
+
+footer > a {
+  color: white;
+}
+
+.font-logo {
+  font-family: "Shrikhand", cursive;
+}
+
+.logo-ohmyfood-section-menu-page {
+  display: flex;
+}
+.logo-ohmyfood-section-menu-page img {
   width: 50%;
   margin: 10px auto;
   display: block;
@@ -22,32 +59,40 @@ a {
   height: auto;
 }
 
-.logo-ohmyfood-section-menu-page {
-  display: flex;
+.home-button {
+  display: none;
 }
 
-.fa-arrow-left {
+.arrow-color {
   color: black;
 }
 
-.arrow-margin {
-  margin: auto 0 auto 15px;
+@media screen and (min-width: 688px) {
+  .logo-ohmyfood-section-menu-page img {
+    width: 252px;
+    margin: 10px auto 10px 10px;
+  }
+  .logo-ohmyfood-section-menu-page .home-button {
+    display: block;
+    align-self: center;
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+  }
+  .logo-ohmyfood-section-menu-page .home-button:hover {
+    font-weight: bold;
+  }
+  .logo-ohmyfood-section-menu-page .arrow-margin {
+    display: none;
+  }
+}
+.user-location {
+  background-color: #eaeaea;
+  padding: 1px;
 }
 
 .map-logo {
   margin-right: 40px;
-}
-
-.paragraph {
-  text-align: center;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.paragraph-fonct {
-  font-size: 16px;
-  font-weight: bold;
-  display: flex;
 }
 
 .reservation-menu {
@@ -63,6 +108,235 @@ a {
 .site-presentation {
   margin: 28px 0;
   font-size: 17px;
+}
+
+.fonctionnement {
+  margin: 50px 5%;
+}
+
+.step {
+  padding: 7px;
+  margin: 18px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 0 11px 26px 0 rgba(0, 0, 0, 0.2);
+}
+
+.paragraph-fonct {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+}
+
+.step-number {
+  background-color: #9356dc;
+  margin: auto 0;
+  color: white;
+  padding: 6px 4px;
+  border-radius: 100px;
+  position: relative;
+  left: -20px;
+}
+
+.step-logo {
+  color: #838383;
+  margin: auto 28px;
+}
+
+.step-text {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 688px) {
+  .fonctionnement {
+    margin: 50px 23%;
+  }
+}
+.restaurant-list {
+  padding: 12px 5%;
+  background-color: #f6f6f6;
+}
+
+.new {
+  position: absolute;
+  right: 5px;
+  z-index: 1;
+  background-color: #99e2d0;
+  padding: 8px;
+  font-size: 17px;
+  color: #159374;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.restaurant-details-flexbox {
+  position: relative;
+}
+
+.restaurant-descr {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.restaurant-descr h3 {
+  margin: 5px 0;
+}
+
+.restaurant-descr p {
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+.restaurant-name-welcome-page {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 688px) {
+  .flexbox-container {
+    display: flex;
+  }
+  .restaurant {
+    width: 25%;
+    margin: 10px;
+  }
+  .new {
+    right: auto;
+    border-radius: 0 10px 10px 0;
+  }
+  .restaurant-descr {
+    margin: 4px 0;
+  }
+  .restaurant-descr h3 {
+    margin: 5px 58px 5px 5px;
+  }
+  .restaurant-descr p {
+    margin: 6px 56px 5px 5px;
+    font-size: 15px;
+  }
+  .restaurant-name-welcome-page {
+    font-size: 15px;
+  }
+}
+.restaurant-menu {
+  position: relative;
+  bottom: 41px;
+  background-color: #f6f6f6;
+  padding: 13px 30px 40px 30px;
+  border-radius: 30px 30px 0 0;
+}
+
+.restaurant-name-heart-logo {
+  position: relative;
+  display: flex;
+  z-index: 1;
+}
+
+.restaurant-name {
+  font-size: 19px;
+  font-style: italic;
+  margin: auto auto auto 0;
+}
+
+.title-menu-page {
+  margin: auto;
+  font-family: "Shrikhand", cursive;
+}
+
+.compress-style {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 12px;
+  padding: 6px;
+}
+
+.descr-width {
+  flex-grow: 4;
+}
+
+.ingredients-price-spacing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragr-style {
+  margin: 0 0 0 0;
+}
+
+.price-moving-div {
+  position: relative;
+  right: -46px;
+  transition: 0.5s;
+}
+
+.dish-menu:hover > .price-moving-div {
+  right: 0;
+}
+
+.price-style {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-right: 2px;
+}
+
+.animation-check {
+  background-color: #99e2d0;
+  position: relative;
+  right: -216%;
+  transition: 0.4s;
+}
+
+.dish-menu:hover > .animation-check {
+  right: 0;
+}
+
+.check-logo {
+  color: white;
+  padding: 22px 15px;
+  transform: rotate(-360deg);
+  transition: transform 750ms ease-in-out;
+}
+
+.dish-menu:hover > .animation-check > .check-logo {
+  transform: rotate(0deg);
+}
+
+.order-button-design {
+  padding: 16px 36px;
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+.order-button {
+  text-align: center;
+}
+
+@media screen and (min-width: 688px) {
+  .flexbox-container-menu {
+    display: flex;
+  }
+  .flexbox-menu {
+    width: 33%;
+    margin: 5px;
+  }
+}
+.h2-welcome-page {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.arrow-margin {
+  margin: auto 0 auto 15px;
+}
+
+.paragraph {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 h1 {
@@ -82,77 +356,19 @@ h2 {
   display: inline-block;
   font-size: 15px;
   font-weight: bold;
-  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 8px 6px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 0 8px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 .restaurant-list-button:hover {
   background-image: linear-gradient(to top left, #b27fd2, #e697dc);
-  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 6px 0 rgb(0 0 0 / 20%);
-}
-
-.order-button-design {
-  padding: 16px 36px;
-  margin-top: 24px;
-  font-size: 14px;
-}
-
-.fonctionnement {
-  margin: 50px 5%;
-}
-
-.h2-welcome-page {
-  font-size: 24px;
-}
-
-.step {
-  padding: 7px;
-  margin: 18px;
-  background-color: #f6f6f6;
-  border-radius: 20px;
-  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 26px 0 rgb(0 0 0 / 20%);
-}
-
-.step-text {
-  font-size: 15px;
-}
-
-.step-number {
-  background-color: #9356dc;
-  margin: auto 0;
-  color: white;
-  padding: 6px 4px;
-  border-radius: 100px;
-  position: relative;
-  left: -20px;
-}
-
-.step-logo {
-  color: #838383;
-  margin: auto 28px;
-}
-
-.restaurant-list {
-  padding: 12px 5%;
-  background-color: #f6f6f6;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 0 11px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 .restaurant {
   border-radius: 20px;
   margin-bottom: 25px;
   position: relative;
-  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 26px 0 rgb(0 0 0 / 20%);
-}
-
-.new {
-  position: absolute;
-  right: 5px;
-  z-index: 1;
-  background-color: #99e2d0;
-  padding: 8px;
-  font-size: 17px;
-  color: #159374;
-  border-radius: 3px;
-  font-weight: bold;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 0 11px 26px 0 rgba(0, 0, 0, 0.2);
 }
 
 img {
@@ -160,24 +376,6 @@ img {
   width: 100%;
   height: 172px;
   object-fit: cover;
-}
-
-.restaurant-details-flexbox {
-  position: relative;
-}
-
-.restaurant-descr {
-  margin-left: 20px;
-  font-size: 20px;
-}
-
-.restaurant-descr h3 {
-  margin: 5px 0;
-}
-
-.restaurant-descr p {
-  margin: 6px 0;
-  font-size: 18px;
 }
 
 .i {
@@ -212,60 +410,10 @@ img {
   -webkit-background-clip: text;
 }
 
-footer {
-  background-color: #353535;
-  color: white;
-  padding: 30px 25px;
-  font-size: 13px;
-}
-
-.footer-main-page {
-  font-size: 17px;
-}
-
-.footer-logo {
-  color: white;
-  margin-right: 15px;
-}
-
-footer > a {
-  color: white;
-}
-
-/* Menu à la française */
 .image-presentation {
   width: 100%;
   height: 250px;
   border-radius: 0;
-}
-
-.restaurant-menu {
-  position: relative;
-  bottom: 41px;
-  background-color: #f6f6f6;
-  padding: 13px 30px 40px 30px;
-  border-radius: 30px 30px 0 0;
-}
-
-.restaurant-name-heart-logo {
-  position: relative;
-  display: flex;
-  z-index: 1;
-}
-
-.restaurant-name {
-  font-size: 19px;
-  font-style: italic;
-  margin: auto auto auto 0;
-}
-
-.restaurant-name-welcome-page {
-  font-size: 18px;
-}
-
-.title-menu-page {
-  margin: auto;
-  font-family: "Shrikhand", cursive;
 }
 
 .menu-name {
@@ -282,7 +430,7 @@ footer > a {
   overflow: hidden;
   background-color: white;
   border-radius: 17px;
-  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 26px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 0 11px 26px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 13px;
   justify-content: space-between;
 }
@@ -291,87 +439,9 @@ footer > a {
   margin: 0 0 0 0;
 }
 
-.paragr-style {
-  margin: 0 0 0 0;
-}
-
 .price-menu {
   font-weight: bold;
   font-size: 46px;
-}
-
-.ingredients-price-spacing {
-  display: flex;
-  justify-content: space-between;
-}
-
-.order-button {
-  text-align: center;
-}
-
-.compress-style {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 12px;
-  padding: 6px;
-}
-
-.animation-check {
-  background-color: #99e2d0;
-  position: relative;
-  right: -216%;
-  transition: 0.4s;
-}
-
-.check-logo {
-  color: white;
-  padding: 22px 15px;
-  transform: rotate(-360deg);
-  transition: transform 750ms ease-in-out;
-}
-
-.price-style {
-  font-weight: bold;
-  font-size: 15px;
-  margin-top: 30px;
-  margin-right: 2px;
-}
-
-.price-moving-div {
-  position: relative;
-  right: -46px;
-  transition: 0.5s;
-}
-
-.dish-menu:hover > .price-moving-div {
-  right: 0;
-}
-
-.dish-menu:hover > .animation-check {
-  right: 0;
-}
-
-.dish-menu:hover > .animation-check > .check-logo {
-  transform: rotate(0deg);
-}
-
-.descr-width {
-  flex-grow: 4;
-}
-
-@keyframes appearing-menu {
-  from {
-    visibility: visible;
-    bottom: -70px;
-    opacity: 0;
-  }
-
-  to {
-    visibility: visible;
-    bottom: 0px;
-    opacity: 1;
-  }
 }
 
 .dish-1 {
@@ -401,10 +471,6 @@ footer > a {
   animation-delay: 0.6s;
 }
 
-.home-button {
-  display: none;
-}
-
 main {
   background-color: #f6f6f6;
 }
@@ -422,87 +488,10 @@ main {
   animation-fill-mode: forwards;
 }
 
-@keyframes disappear {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    visibility: hidden;
-  }
-}
-
 @media screen and (min-width: 688px) {
-  .flexbox-container {
-    display: flex;
-  }
-
-  .restaurant {
-    width: 25%;
-    margin: 10px;
-  }
-
-  .flexbox-container-menu {
-    display: flex;
-  }
-
-  .flexbox-menu {
-    width: 33%;
-    margin: 5px;
-  }
-
-  .restaurant-name-welcome-page {
-    font-size: 15px;
-  }
-
-  .restaurant-descr {
-    margin: 4px 0;
-  }
-
-  .new {
-    right: auto;
-    border-radius: 0 10px 10px 0;
-  }
-
   .h2-welcome-page {
     text-align: center;
   }
-
-  .fonctionnement {
-    margin: 50px 23%;
-  }
-
-  .home-button {
-    display: block;
-    align-self: center;
-    margin-right: 15px;
-    text-decoration: none;
-    color: black;
-  }
-
-  .home-button:hover {
-    font-weight: bold;
-  }
-
-  .arrow-margin {
-    display: none;
-  }
-
-  .logo-ohmyfood {
-    width: 252px;
-    margin: 10px auto 10px 10px;
-  }
-
-  .restaurant-descr h3 {
-    margin: 5px 58px 5px 5px;
-  }
-
-  .restaurant-descr p {
-    margin: 6px 56px 5px 5px;
-    font-size: 15px;
-  }
 }
 
-.font-logo {
-  font-family: "Shrikhand", cursive;
-}
+/*# sourceMappingURL=styles.css.map */

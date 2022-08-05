@@ -1,0 +1,189 @@
+@import "base.scss";
+@import "animations.scss";
+@import "footer.scss";
+@import "header.scss";
+@import "user-location.scss";
+@import "reservation-menu.scss";
+@import "fonctionnement.scss";
+@import "section-restaurants.scss";
+@import "restaurant-menu.scss";
+
+$secondary: #ff79da;
+$blanc: #f6f6f6;
+$primary: #9356dc;
+
+.h2-welcome-page {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.arrow-margin {
+  margin: auto 0 auto 15px;
+}
+
+.paragraph {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  margin-bottom: 17px;
+}
+
+.restaurant-list-button {
+  background-image: linear-gradient(to top left, $primary, $secondary);
+  border-radius: 100px;
+  color: white;
+  padding: 14px 19px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 8px 6px 0 rgb(0 0 0 / 20%);
+}
+
+.restaurant-list-button:hover {
+  background-image: linear-gradient(to top left, #b27fd2, #e697dc);
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 6px 0 rgb(0 0 0 / 20%);
+}
+
+.restaurant {
+  border-radius: 20px;
+  margin-bottom: 25px;
+  position: relative;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 26px 0 rgb(0 0 0 / 20%);
+}
+
+img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 172px;
+  object-fit: cover;
+}
+
+.i {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.i-2 {
+  position: absolute;
+  right: -5px;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+//à laisser sur main
+.heart-sol {
+  color: transparent;
+  background-image: linear-gradient($secondary, $primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 350ms;
+}
+
+//à laisser sur main
+.heart-sol:hover {
+  opacity: 1;
+}
+
+//à laisser sur main
+.div-heart-logo {
+  background: darkslategrey;
+  -webkit-background-clip: text;
+}
+
+.image-presentation {
+  width: 100%;
+  height: 250px;
+  border-radius: 0;
+}
+
+.menu-name {
+  font-size: 19px;
+  font-weight: 500;
+  width: 49px;
+  color: darkslategrey;
+  border-bottom: 4px solid powderblue;
+}
+
+.dish-menu {
+  cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 17px;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 11px 26px 0 rgb(0 0 0 / 20%);
+  margin-bottom: 13px;
+  justify-content: space-between;
+}
+
+.dish-menu h3 {
+  margin: 0 0 0 0;
+}
+
+.price-menu {
+  font-weight: bold;
+  font-size: 46px;
+}
+
+.dish-1 {
+  visibility: hidden;
+  position: relative;
+  animation: appearing-menu 1s forwards;
+}
+
+.dish-2 {
+  visibility: hidden;
+  position: relative;
+  animation: appearing-menu 1s forwards;
+  animation-delay: 0.2s;
+}
+
+.dish-3 {
+  visibility: hidden;
+  position: relative;
+  animation: appearing-menu 1s forwards;
+  animation-delay: 0.4s;
+}
+
+.dish-4 {
+  visibility: hidden;
+  position: relative;
+  animation: appearing-menu 1s forwards;
+  animation-delay: 0.6s;
+}
+
+main {
+  background-color: $blanc;
+}
+
+.loader {
+  position: fixed;
+  background-color: #ffffff;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  inset: 0;
+  z-index: 2;
+  opacity: 0.9;
+  animation: disappear 1s;
+  animation-fill-mode: forwards;
+}
+
+@media screen and (min-width: 688px) {
+  .h2-welcome-page {
+    text-align: center;
+  }
+}
