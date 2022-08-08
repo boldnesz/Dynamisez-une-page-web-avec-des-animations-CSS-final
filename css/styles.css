@@ -91,10 +91,6 @@ footer > a {
   padding: 1px;
 }
 
-.map-logo {
-  margin-right: 40px;
-}
-
 .reservation-menu {
   background-color: #f6f6f6;
   padding: 54px 30px;
@@ -310,6 +306,22 @@ footer > a {
 
 .order-button {
   text-align: center;
+}
+
+input[type="text"] {
+  text-align: center;
+  padding: 0;
+  border: 0;
+  height: 18px;
+  width: 130px;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+  background-color: #eaeaea;
+  border: 0;
 }
 
 @media screen and (min-width: 688px) {

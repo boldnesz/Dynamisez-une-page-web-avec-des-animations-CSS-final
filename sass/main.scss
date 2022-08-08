@@ -1,3 +1,7 @@
+$secondary: #ff79da;
+$blanc: #f6f6f6;
+$primary: #9356dc;
+
 @import "base.scss";
 @import "animations.scss";
 @import "footer.scss";
@@ -7,10 +11,6 @@
 @import "fonctionnement.scss";
 @import "section-restaurants.scss";
 @import "restaurant-menu.scss";
-
-$secondary: #ff79da;
-$blanc: #f6f6f6;
-$primary: #9356dc;
 
 .h2-welcome-page {
   font-size: 24px;
