@@ -314,6 +314,7 @@ input[type="text"] {
   border: 0;
   height: 18px;
   width: 130px;
+  background-color: #eaeaea;
 }
 
 ::placeholder {
